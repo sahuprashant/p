@@ -1429,6 +1429,9 @@
 			transition: none !important;
 		}
 
+
+	
+
 /* Type */
 
 	body, input, select, textarea {
@@ -1475,10 +1478,17 @@
 		margin: 0 0 2em 0;
 	}
 
-	h1, h2, h3, h4, h5, h6 {
+	h2, h3, h4, h5, h6 {
 		color: #ffffff;
 		font-weight: 200;
 		line-height: 1.5;
+		margin: 0 0 1em 0;
+	}
+
+	h1{
+		color: #ffffff;
+		font-weight: 200;
+		line-height: 0.45;
 		margin: 0 0 1em 0;
 	}
 
@@ -1851,7 +1861,7 @@
 			margin-bottom: 0;
 		}
 
-		.box.alt {
+		.box.f {
 			border: 0;
 			border-radius: 0;
 			padding: 0;
@@ -2559,8 +2569,8 @@
 
 	#wrapper {
 		max-width: 68em;
-		background-color: rgba(0, 0, 0, 0.8);
-		max-width: 80%;
+		/*background-color: rgba(0, 0, 0, 0.8);
+		max-width: 80%;*/
 		width: 100%;
 		margin: 0 auto;
 		padding: 0 2em;
@@ -2619,8 +2629,10 @@
 				padding: 4em 0 2em 0;
 			}
 
+			
 		}
 
+		
 /* Footer */
 
 	#footer {
