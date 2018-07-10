@@ -9,15 +9,22 @@
 	</head>
 	<body>
 
-			
+			<div class="w3-sidebar w3-bar-block w3-animate-left w3-text-black w3-hover-text-black:hover" style="display:none;z-index:5" id="mySidebar">
+			  <button class="w3-bar-item w3-button w3-large" onclick="w3_close()">&times;</button>			  
+			  <a href="favourite.html" class="w3-bar-item w3-button">My favourite</a>
+			  <a href="" class="w3-bar-item w3-button">My Interests & Hobbies</a>
+			  <a href="" class="w3-bar-item w3-button">About Me</a>
+			</div>
 
+			<button class="w3-button w3-white w3-xxlarge" onclick="w3_open()">&#9776;</button>
 		<!-- Wrapper -->
 			<div id="wrapper">
 
-
+				<div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
 
 				<!-- Header -->
 					<header id="header">
+					
 						<span class="avatar"><img src="images/avatar.jpg" /></span>
 						<h1>Hi, I'm <strong>Prashant Sahu</strong></h1> <h1> Android Developer | Fanatic | Geek</h1> <h1>Chemical Engineering Graduate from <a href="https://www.iith.ac.in">IIT Hyderabad</a></h1>
 						<ul class="icons">
@@ -76,6 +83,16 @@
 			<script src="assets/js/jquery.poptrox.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+				function w3_open() {
+				    document.getElementById("mySidebar").style.display = "block";
+				    document.getElementById("myOverlay").style.display = "block";
+				}
+				function w3_close() {
+				    document.getElementById("mySidebar").style.display = "none";
+				    document.getElementById("myOverlay").style.display = "none";
+				}
+			</script>
 
 	</body>
 </html>

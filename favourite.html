@@ -1,0 +1,109 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>My Favourite</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body>
+
+			<div class="w3-sidebar w3-bar-block w3-animate-left w3-text-black w3-hover-text-black:hover" style="display:none;z-index:5" id="mySidebar">
+			  <button class="w3-bar-item w3-button w3-large" onclick="w3_close()">&times;</button>
+			  <a href="index.html" class="w3-bar-item w3-button">Home</a>
+			  <a href="" class="w3-bar-item w3-button">My favourite</a>
+			  <a href="#" class="w3-bar-item w3-button">My Interests & Hobbies</a>			  
+			  <a href="#" class="w3-bar-item w3-button">About Me</a>
+			</div>
+
+			<button class="w3-button w3-white w3-xxlarge" onclick="w3_open()">&#9776;</button>
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
+
+				<header id="header">
+					<h1>My Interests and Hobbies</h1>		
+				</header>
+
+				<!-- Main -->
+					<section id="main">
+
+						<!-- Thumbnails -->
+							<section class="fthumbnails">
+							<h2>My favourite Books</h2>
+								<div>
+									<a href="#" >
+										<img  src="images/harry.jpg"  />
+										<h3 ><strong>Harry Potter</strong></h3>									
+									</a>
+									<a href="#" >
+										<img  src="images/sidney.jpg"/>
+										<h3 ><strong>Nothing Lasts Forever</strong></h3>
+									</a>
+									<a href="#">
+										<img src="images/letsdoit.jpg"/>
+										<h3><strong>Screw it, Let's do it</strong></h3>
+									</a>
+								</div>	
+
+							<h2>My favourite YouTube channels</h2>
+								<div>
+									<a href="https://www.youtube.com/channel/UC4QZ_LsYcvcq7qOsOhpAX4A">
+										<img src="images/yt/coldfusion.jpg">
+										<h3><strong>Coldfusion</strong></h3>
+									</a>
+									<a href="https://www.youtube.com/channel/UCqZQJ4600a9wIfMPbYc60OQ">
+										<img src="images/yt/learneng.jpg">
+										<h3><strong>Learn Engineering</strong></h3>
+									</a>
+									<a href="https://www.youtube.com/channel/UCzWQYUVCpZqtN93H8RR44Qw">
+										<img src="images/yt/seeker.jpg">
+										<h3>Seeker</h3>
+									</a>
+								</div>
+								<div>
+									<a href="https://www.youtube.com/channel/UCWQ9ZFFhEqUZ0r1IspnBm6Q">
+										<img src="images/yt/tdc.jpg">
+										<h3>The Daily Conversation</h3>
+									</a>
+									<a href="https://www.youtube.com/channel/UCHnyfMqiRRG1u-2MsSQLbXA">
+										<img src="images/yt/ve.jpg">
+										<h3>Veritasium</h3>
+									</a>
+									<a href="https://www.youtube.com/channel/UCLXo7UDZvByw2ixzpQCufnA">
+										<img src="images/yt/vox.jpg">
+										<h3>Vox</h3>
+									</a>
+								</div>
+														
+							</section>
+
+					</section>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<p>More to be Added soon!!</p>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script>
+				function w3_open() {
+				    document.getElementById("mySidebar").style.display = "block";
+				    document.getElementById("myOverlay").style.display = "block";
+				}
+				function w3_close() {
+				    document.getElementById("mySidebar").style.display = "none";
+				    document.getElementById("myOverlay").style.display = "none";
+				}
+			</script>
+
+	</body>
+</html>
